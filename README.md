@@ -22,10 +22,9 @@ Thanks to advances in **computer vision** and **deep learning**, machines can no
 ```
 SignLanguageDetection/
 ├── Program/
-│   ├── app.py                 # Main application script
+│   ├── app.py                 # Main application script and Hand gesture detection and recognition logic
 │   ├── training.py            # Model training script
 │   ├── test.py                # Model evaluation script
-│   └── hand_gesture.py        # Hand gesture detection and recognition logic
 ├── Datasets/                  # Sample images/videos organized by gesture class
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
@@ -39,8 +38,8 @@ SignLanguageDetection/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/SignLanguageDetection.git
-cd SignLanguageDetection
+git clone https://github.com/KaranSingh52ED/Sign-Language-Detection-DeepLearning-Project.git
+cd Sign-Language-Detection-DeepLearning-Project
 ```
 
 ### 2️⃣ Set Up the Environment
@@ -69,31 +68,31 @@ pip install -r requirements.txt
 ```
 Datasets/
 ├── train/
-│   ├── gesture_01/
-│   ├── gesture_02/
+│   ├── ONE/
+│   ├── TWO/
 │   └── ...
 └── test/
-    ├── gesture_01/
-    ├── gesture_02/
+    ├── ONE/
+    ├── TWO/
     └── ...
 ```
 
 ### 4️⃣ Train the Model
 
 ```bash
-python Program/training.py --data_dir Datasets/train --epochs 20 --batch_size 32
+python Program/training.py
 ```
 
 ### 5️⃣ Evaluate the Model
 
 ```bash
-python Program/test.py --data_dir Datasets/test --model_path models/gesture_recognition.h5
+python Program/test.py
 ```
 
 ### 6️⃣ Run the Application
 
 ```bash
-python -u Program/app.py --model_path models/gesture_recognition.h5
+python -u Program/app.py
 ```
 
 ---
